@@ -60,7 +60,7 @@ jobs:
             echo "${{ secrets.D_PASSWORD }}" | docker login -u "${{ secrets.D_USERNAME }}" --password-stdin
             
             IMAGE_TAG="${{ github.sha }}"
-            IMAGE_NAME="phananh2005/testcicd"
+            IMAGE_NAME="${{ secrets.D_USERNAME }}/testcicd"
             
             docker pull $IMAGE_NAME:$IMAGE_TAG
             

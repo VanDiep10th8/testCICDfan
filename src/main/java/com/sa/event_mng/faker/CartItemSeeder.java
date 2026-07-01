@@ -21,6 +21,9 @@ import java.util.Random;
 @RequiredArgsConstructor
 public class CartItemSeeder {
 
+
+
+    
     private final CartRepository cartRepository;
     private final CartItemRepository cartItemRepository;
     private final TicketTypeRepository ticketTypeRepository;
