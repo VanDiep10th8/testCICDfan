@@ -19,6 +19,9 @@ public class BlogPostSeeder {
 
     private static final int POST_COUNT = 21;
 
+
+
+    
     private final BlogPostRepository blogPostRepository;
     private final BlogTagRepository blogTagRepository;
     private final UserRepository userRepository;
