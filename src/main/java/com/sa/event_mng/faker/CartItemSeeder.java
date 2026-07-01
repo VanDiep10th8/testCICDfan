@@ -23,7 +23,7 @@ public class CartItemSeeder {
 
 
 
-    
+
     private final CartRepository cartRepository;
     private final CartItemRepository cartItemRepository;
     private final TicketTypeRepository ticketTypeRepository;
@@ -53,6 +53,10 @@ public class CartItemSeeder {
                         .subtotal(unit.multiply(BigDecimal.valueOf(qty)))
                         .build();
 
+
+
+
+                        
                 cartItemRepository.save(item);
             }
         }
