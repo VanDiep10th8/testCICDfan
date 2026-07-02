@@ -15,13 +15,9 @@ import java.util.Random;
 
 
 
-
-
 @Component
 @RequiredArgsConstructor
 public class CartItemSeeder {
-
-
 
 
     private final CartRepository cartRepository;
@@ -54,9 +50,6 @@ public class CartItemSeeder {
                         .build();
 
 
-
-
-                        
                 cartItemRepository.save(item);
             }
         }
